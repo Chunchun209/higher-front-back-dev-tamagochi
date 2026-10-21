@@ -30,11 +30,7 @@ class Medicine:
     uses: int = 0  # текущее количество применений
 
     def is_empty(self) -> bool:
-        """
-        Проверяет, осталось ли еще лекарство
-
-        :return: True если осталось, иначе False
-        """
+        """Проверяет, осталось ли еще лекарство"""
         return self.uses >= self.number_of_uses
 
     def __repr__(self) -> str:
